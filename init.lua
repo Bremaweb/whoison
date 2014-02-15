@@ -117,7 +117,7 @@ minetest.register_chatcommand("timeonline",{
 
 function breakdowntime(t)
 	local eng = {"Seconds","Minutes","Hours","Days","Weeks","Months","Years"}
-	local inc = {60,60,60,24,7,4,12}	
+	local inc = {60,60,24,7,4,12,1}	
 	for k,v in ipairs(inc) do
 		if ( t > v ) then
 			t = math.floor( (t / v) )
